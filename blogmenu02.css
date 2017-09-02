@@ -1,0 +1,59 @@
+<div id="menu">
+    <div id="btnArea">
+        <span id="menuBtn"><i class="blogicon-reorder lg"></i> MENU</span>
+    </div>
+    <ul id="menuContent">
+        <li><a href='http://urushiushiru.hatenablog.com/archive'>HOME</a></li>
+        <li><a href='http://urushiushiru.hatenablog.com/archive/category/%E6%97%85%E8%A1%8C%E8%A8%98'>TRAVEL</a></li>
+        <li><a href='http://urushiushiru.hatenablog.com/archive/category/%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%B0'>CYCLING</a></li>
+        <li><a href='http://urushiushiru.hatenablog.com/archive/category/%E3%82%B0%E3%83%AB%E3%83%A1'>GOURMET</a></li>
+        <li><a href='http://urushiushiru.hatenablog.com/archive/category/%E3%81%9D%E3%81%AE%E4%BB%96'>OTHERS</a></li>
+    </ul>
+</div>
+ 
+<style type="text/css">
+#top-editarea .section{
+    margin: 0;
+    width: 100%;
+}
+#menu{background: #eee;/*メニューバーの背景*/}
+#btnArea{text-align: right;/*MENUの文字の位置*/}
+#menuBtn{
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    background: #444;/*MENUの背景色*/
+    color: #fff;/*MENUの文字色*/
+    font-size: 80%;
+}
+#menu > ul{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+#menuContent > li{
+    list-style-type: none;
+    margin: 0 auto;
+}
+#menuContent > li > a{
+    display: block;
+    padding: 7px;
+    text-align: center;/*リストの文字の位置*/
+    background: #444;/*リストの背景色*/
+    color: #fff;/*リストの文字色*/
+    font-size: 80%;
+    font-weight: bold;
+}
+</style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+$(function(){
+    var menuBtn = $("#menuBtn"),
+        menuContent = $("#menuContent");
+    menuBtn.click(function(){
+        menuContent.slideToggle();
+    });
+});
+</script>
